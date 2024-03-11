@@ -37,7 +37,6 @@ const todosSlice = createSlice({
       ]
     },
     [__deleteTodo.fulfilled]: (state, action) => {
-      console.log(action.payload)
       state.list = state.list.filter(todo => todo.id !== action.payload);
     },
   }
